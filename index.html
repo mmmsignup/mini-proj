@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Single Page Website
+        </title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        
+        <header>
+            <nav id="nav-id">
+                <ul>
+                    <li><a id="home-link" href="#" onclick="event.preventDefault();goFocus('home-section');" title="Home">Home</a></li>
+                    <li><a href="#" onclick="event.preventDefault();goFocus('about-me-section');" title="About Me">About Me</a></li>
+                    <li><a id="hobbies-link" href="#" onclick="event.preventDefault();goFocus('hobbies-section');" title="Hobbies and Interests">Hobbies and Interests</a></li>
+                    <li><a id="contact-link" href="#" onclick="event.preventDefault();goFocus('contact-section');" title="Contact Info">Contact Info</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <section id="about-me-section" tabindex="0" class="section-header">
+                <h2>About Me</h2>
+                <img id="images-id" src="assets/student.jpg"></img>
+                <p>
+                    Hello there! I am Markie!
+                    I am currently a masters student taking MIS. I am a software engineer by profession. 
+                    I am eager to learn new things and upgrade my skills.
+                    I am passionate about technology and nature.
+                </p>
+                <button onClick="hideShowFunSection();" >Fun Fact</button>
+                <!-- <div > -->
+                    <p id="fun-section">This photo is from the first time we went to Japan, in Osaka.</p>
+                <!-- </div> -->
+            </section>
+            <section id="hobbies-section" tabindex="1" class="section-header">
+                <h2>Hobbies & Interests</h2>
+                <h3>Music</h3>
+                <img id="images-id" src="assets/piano.webp"></img>
+                <p>
+                    I play music as one of my hobbies. My repertoire is pop, ballad, and anime music. My go to place for anime sheet music is <a href="https://ichigos.com/" target="_blank" title="Ichigos Sheet Music">link</a>.
+                </p>
+                <h3>Baking</h3>
+                <img id="images-id" src="assets/bread.jpg" title="Freshly baked bread"></img>
+                <p>
+                    It's very seldom that we buy bread from the grocery because I bake our own bread. I have my own recipe for our breads and also I do experiment using new recipes and try out breads we haven't baked before.
+                </p>
+                <h3>Traveling</h3>
+                <img id="images-id" src="assets/fuji.webp" title="The majestic Mt. Fuji"></img>
+                <p>
+                    Yes! I love to travel with my family and our top destination is Japan. We have been to this lovely country around 5 times and visited different places so far.
+                    Each time we travel there, we make sure we do it ourserlves (DIY) and not via tours. Here is one of our youtube videos in Japan. 
+                </p>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/j_aL5XaZ_mQ" frameborder="0" allowfullscreen></iframe>
+            </section>
+            <section id="contact-section" tabindex="2" class="section-header">
+                <h2>Contact Info</h2>
+                <p>
+                    Let's connect and have a coffee!
+                    <br/>
+                        You can use the contact details below to get in touch.
+                    <br/><br/>
+                        <img src="assets/email.webp" class="contact-icons"></img>
+                        Email: your.email@example.com<br/>
+                        <img src="assets/LinkedIn_icon.svg.png" class="contact-icons"></img>
+                        LinkedIn: linkedin.com/in/yourprofile<br/>
+                </p>
+            </section>
+        </article>
+        <br />
+        <div id="go-to-top-section">
+            <img id="scroll-up-icon" src="assets/scroll-up.png" title="Back to Top"/>
+        </div>
+        <footer>
+            <p>Copyright 2026</p>
+            <!-- <button id="goToTop" onclick="goToTop()";>Go To Top</button> -->
+            <!-- <p id="screen-size"></p> -->
+        </footer>
+        <!-- <div class="resp-div">
+            <p id="resp-div-txt">resp-div</p>
+        </div> -->
+    </body>
+</html>

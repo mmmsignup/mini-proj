@@ -1,0 +1,180 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    /* background-color: #BA99C0; */
+    background-color: white;
+    min-width: 256px;
+    max-width: 1024px;
+}
+nav ul{
+    font-family: sans-serif;
+    list-style-type: none;
+    background-color: #074d87;
+    /* background-color: #B577B5; */
+    border: 4x solid #111111;
+    /* border-radius: 10px; */
+    font-weight: bold;
+    padding: 20px;
+    font-family: sans-serif;
+    
+}
+nav ul li{
+    display: inline;
+    border-right: 2px solid white;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+nav ul li:last-child{
+    border-right: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #00AFEB;
+}
+
+p.top-tip{
+    border: 4px dashed #00AFEB;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #c5ebfb;
+    
+    
+}
+p.top-tip::before{
+    color: black;
+    content: "Mega Tip!: ";
+    font-weight: bold;
+    
+}
+table{
+    font-size: 90%;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid #000000;
+}
+th{
+    background-color: #FCAB68;
+}
+td {
+    background-color: #BA99C0;
+}
+section{
+    margin-top: 20px;
+    font-family: sans-serif;
+    border-color: #000000;
+    padding: 50px;
+    border: 1px solid;
+    background-color: #c5ebfb;
+    
+}
+
+section div .section-header{
+    font-size: 100px solid;
+    font-weight: bold;
+}
+
+footer {
+    font-family: sans-serif;
+    background-color: #074d87;
+    min-width:100%;
+    min-height: 100px;
+    padding: 20px;
+    color: white
+}
+
+.resp-div.small{
+    background-color: red;
+    height: 200px;
+}
+.resp-div.medium{
+    background-color: blue;
+    max-width: 360px;
+    width: 50%;
+}
+.resp-div.large{
+    background-color: pink;
+    max-width: 360px;
+    width: 100%;
+}
+@media all and (min-width: 651px) and (max-width: 800px){
+    .resp-div{
+        background-color: lightblue;
+    }
+     /* #images-id{
+        height: 300px;
+        width: 500px;
+    } */
+    
+    
+}
+@media all and (min-width: 400px) and (max-width: 650px){
+    .resp-div{
+        background-color: orange;
+    }
+    section div.section-header{
+        font-size: 32 px solid;
+        font-weight: bold;
+}
+    section div.section-header{
+        font-size: 32 px solid;
+        font-weight: bold;
+    }
+    /* #images-id{
+        height: 150px;
+        width: 250px;
+    } */
+}
+@media all and (min-width: 801px) and (max-width: 1024px){
+    .resp-div{
+        background-color: red;
+    }
+}
+#scroll-up-icon{
+    height: 50px;
+    width: 50px;
+    transition: height 0.2s, width 0.2s ;
+    /* transition: width 0.5s; */
+}
+
+#go-to-top-section{
+    /* min-height: 100px; */
+    /* background-color: aqua; */
+    /* transition: background-color 0.5s; */
+    float:right;
+}
+#scroll-up-icon:hover{
+    /* min-height: 100px; */
+    height: 60px;
+    width: 60px;
+    float:right;
+}
+#images-id{
+    height: 100%;
+    width: 100%;
+}
+
+.contact-icons{
+    height:50px;
+    width: 50px;
+}
+#fun-section{
+    visibility: hidden;
+}

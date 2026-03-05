@@ -1,0 +1,14 @@
+ViewPort
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
+
+Focus on section
+- https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus
+
+Tab index
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex
+
+Scroll to top
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+
+Hover
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:hover
