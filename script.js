@@ -8,10 +8,6 @@ window.onload = function(){
     let scroll_up_icon = null;
     let nav_id = null;
     
-    
-    
-    // getWindowSize();
-    
     document.getElementById('scroll-up-icon').addEventListener("click", () => {
         console.log("Clicked");
         document.getElementById('nav-id').scrollIntoView({behavior:"smooth", block:"start"});
@@ -25,12 +21,6 @@ window.onload = function(){
         nav_id = document.getElementById('nav-id');
         fun_status = document.getElementById("fun-section").style.visibility;
         
-        
-        console.log("onload");
-        // document.getElementById('scroll-up-icon').addEventListener("click", () => {
-        //     console.log("Clicked");
-        //     document.getElementById('nav-id').scrollIntoView({behavior:"smooth", block:"start"});
-        // });
     });
     
 }
@@ -44,19 +34,12 @@ function getWindowSize(){
     document.getElementById('resp-div-txt').innerText = window.innerWidth + 'px';
 }
 function goFocus(id){
-    console.log("id:" + id);
     document.getElementById(id).focus();
-    
-    // hobbies5.focus();
 }
 function goToTop(){
-    console.log("gototop");
-    // document.getElementById('nav-id').scrollIntoView({behavior:"smooth", block:"start"});
     nav_id.scrollIntoView({behavior:"smooth", block:"start"});
-   
 }
 function showFun(){
-    console.log("ShowFun");
     document.getElementById("fun-section").style.visibility = 'visible';    
 }
 function hideFun(){
@@ -66,7 +49,7 @@ function hideFun(){
 function hideShowFunSection(){
     
     fun_status = document.getElementById("fun-section").style.visibility;
-    console.log("fun_status:" + fun_status);
+    
     if (fun_status == 'hidden'){
         showFun();
     }else if(fun_status == 'visible'){
