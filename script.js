@@ -51,29 +51,4 @@ function goFocus(id){
 }
 function goToTop(){
     console.log("gototop");
-    // document.getElementById('nav-id').scrollIntoView({behavior:"smooth", block:"start"});
-    nav_id.scrollIntoView({behavior:"smooth", block:"start"});
-   
-}
-function showFun(){
-    console.log("ShowFun");
-    document.getElementById("fun-section").style.visibility = 'visible';    
-}
-function hideFun(){
-    document.getElementById("fun-section").style.visibility = 'hidden';    
-}
-
-function hideShowFunSection(){
-    
-    fun_status = document.getElementById("fun-section").style.visibility;
-    console.log("fun_status:" + fun_status);
-    if (fun_status == 'hidden'){
-        showFun();
-    }else if(fun_status == 'visible'){
-        hideFun();
-    }else{
-        console.log('fun_status:' + fun_status);
-        console.log("else:" + document.getElementById("fun-section").style.visibility);
-        showFun();
-    }
-}
+    // document.getElementById('nav-id').scrollInto
